@@ -118,6 +118,9 @@ const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
 
+    // Update particles
+    particles.position.y = - elapsedTime * 0.2
+
     // Update controls
     controls.update()
 
